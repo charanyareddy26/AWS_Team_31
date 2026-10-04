@@ -1,8 +1,8 @@
-\# Amazon EFS Shared Storage for Content Management Club
+-> Amazon EFS Shared Storage for Content Management Club
 
 
 
-\## Project Overview
+## Project Overview
 
 
 
@@ -14,7 +14,7 @@ Two Amazon EC2 instances are connected to the same EFS file system, allowing bot
 
 
 
-\## Problem Statement
+->Problem Statement
 
 
 
@@ -26,31 +26,21 @@ Using separate local storage on different servers can make file sharing and coll
 
 
 
-\## Proposed Solution
+-> Proposed Solution
 
 
 
 Amazon EFS is used as shared storage between two Amazon EC2 instances.
 
 
+text
 
-```text
 
 Server 1 ─────┐
-
-&#x20;             │
-
-&#x20;             ▼
-
-&#x20;         Amazon EFS
-
-
-
-&#x20;             │
-
-&#x20;             ▲
-
-&#x20;             │
-
+              │
+              ▼
+          Amazon EFS
+              │
+              ▲
+              │
 Server 2 ─────┘
-
